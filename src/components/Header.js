@@ -11,18 +11,18 @@ const Header = () => {
       <div className="flex flex-fixed black">
         <div className="fw7 mr1">Hacker News</div>
         <Link to="/" className="ml1 no-underline black">
-          LIST
+          new
         </Link>
         <div className="ml1">|</div>
-        <Link to="/create" className="ml1 no-underline black">
-          NEW
+        <Link to="/top" className="ml1 no-underline black">
+          top
         </Link>
         <div className="ml1">|</div>
         <Link
-          to="/login"
+          to="/search"
           className="ml1 no-underline black"
         >
-          LOGIN
+          search
         </Link>
         {authToken && (
           <div className="flex">
