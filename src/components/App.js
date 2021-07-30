@@ -1,9 +1,10 @@
 import React from 'react';
-import CreateLink from './CreateLink';
+import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import LinkList from './LinkList';
-import { Switch, Route } from 'react-router-dom';
+import CreateLink from './CreateLink';
 import Login from './Login';
+import Search from './Search';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             component={CreateLink}
           />
           <Route exect path="/login" component={Login} />
+          <Route exact path="/search" component={Search}></Route>
         </Switch>
       </div>
     </div>
