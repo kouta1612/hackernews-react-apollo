@@ -1,4 +1,4 @@
-import { AUTH_TOKEN, LINKS_PER_PAGE } from '../constants';
+import { LINKS_PER_PAGE } from '../constants';
 import React, { useState } from 'react';
 import { useMutation, gql } from '@apollo/client';
 import { useHistory } from 'react-router';
